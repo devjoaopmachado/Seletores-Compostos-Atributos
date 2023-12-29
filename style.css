@@ -1,0 +1,72 @@
+/*#1*/
+ a[href^=http]::after {
+content:  url(imagens/newWindow-icon.png);
+display: inline;
+} 
+  h1+ol>li:first-of-type::after {
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px;  
+}
+/*#2*/
+a[href$=".pdf"]::before {
+    content: url(imagens/pdf-icon.gif); 
+}
+h1+ol>li:nth-child(2)::after{
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px;  
+}
+/*#3*/
+h1+ol>li:nth-child(3)::after{
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px; 
+}
+/*#3-1*/
+input+label[for="chk1"] {
+    background-color: green;
+}
+
+    ol>li:first-child:after{
+        content: url(imagens/checked.png);
+        display: inline;
+        padding-left: 4px; 
+    }  
+
+/*#3-2*/
+input:not(:checked)+label[for="chk1"]  {
+    background-color: red;
+  }
+  ol>li:nth-child(2):after{
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px; 
+}
+/*#3-3*/
+ol>ol>li:nth-child(3)::after{
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px; 
+}
+ input+label[for="chk2"] {
+    background-color: blue;
+    color: white;
+}
+/*#3-4*/
+ol>li:nth-child(4)::after{
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px;  
+}
+/*#4*/
+ul :nth-of-type(3) {
+    background-color: rgb(56, 167, 56);
+    width: fit-content;
+}
+ul :nth-of-type(3)::after{
+    content: url(imagens/checked.png);
+    display: inline;
+    padding-left: 4px;  
+}
+/*end*/
